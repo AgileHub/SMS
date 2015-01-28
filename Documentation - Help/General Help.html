@@ -1,0 +1,1114 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Theme Documentation</title>
+	
+	<meta name="description" content="Thank you">
+	<meta name="author" content="Progression Studios">
+	<meta name="copyright" content="Progression Studios">
+	<meta name="generator" content="Documenter v1.4 http://rxa.li/documenter">
+	<meta name="date" content="2011-08-19T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	<script src="assets/js/jquery.1.5.1.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		pre {overflow:auto;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		
+		
+		
+
+		<a href="#documenter_cover" id="documenter_logo" ></a>
+		
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#imagesizes">Recommended Image Sizes</a></li>
+			<li><a href="#logo">Logo &amp; Navigation</a></li>
+			<li><a href="#html">HTML Samples</a></li>
+			<li><a href="#cssfiles">CSS Files (Color Scheme)</a></li>
+			<li><a href="#javascriptfiles">JavaScript Files</a></li>
+			<li><a href="#featuredslider">Featured Slider</a></li>
+			<li><a href="#page-title">Custom Backgrounds</a></li>
+			<li><a href="#lightbox">Using the Lightbox</a></li>
+			<li><a href="#extras">Flickr/Contact Map</a></li>
+			<li><a href="#phpfiles">Contact Fom)</a></li>
+			<li><a href="#customizations">Customizations (Responsive)</a></li>
+			<li><a href="#searchcms">Search and CMS</a></li>
+			<li><a href="#psd_files">PSD Files</a></li>
+			<li><a href="#sources_and_credits">Sources and Credits</a></li>
+		</ol>
+		
+		<div id="documenter_copyright">&copy;2014 ProgressionStudios<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.4</a> 
+		</div><!-- close #documenter_copyright -->
+	</div><!-- close #documenter_sidebar -->
+	
+	
+	
+	
+	
+	<div id="documenter_content">
+		
+		<section id="documenter_cover">
+			<h1>Frover - Muti-Purpose WordPress Theme</h1>
+			<h2>By Progression Studios</h2>
+			<hr>
+			<p>Thank you for purchasing this template. If you have any questions that are beyond the scope of this help file, <a href="http://support.progressionstudios.com/" target="_blank"><strong>visit our support forum</strong></a>. </p>	
+		</section>
+		
+		
+		
+		<section id="imagesizes">
+			<h3>Recommended Image Sizes</h3>
+			<hr class="notop">
+				
+			<p>Below are recommended image sizes.  You can adjust these though as you like, they are only recommendations</p>		
+			<ul>
+				<li>Homepage Slider:  <strong>1800 pixels wide</strong> x <strong>800 pixels tall</strong></li>
+				<li>Portfolio Images:  <strong>1200 pixels wide</strong> x <strong>600 pixels tall</strong></li>
+				<li>Blog Image:  <strong>1140 pixels wide</strong> x <strong>575 pixels tall</strong></li>
+			</ul>
+			
+			<p>The suggested image sizes might be larger than you would expect.   You can always adjust the image size down if you want to have smaller file sizes.</p>
+				<br><Br>
+			
+			
+			
+		</section>
+		
+		
+		<section id="logo">
+			<h3>Logo &amp; Navigation</h3>
+			<hr class="notop">
+			
+			
+			<h5>Changing the logo </h5>
+			<p><img src="assets/images/logo-1.jpg" width="377" height="155" ></p>
+			
+			<p>Changing out your logo is simple. I've included a Photoshop template, /Additional Files/Templates/<strong>logo.psd</strong> that is 360 pixels wide by 214 pixels tall. (Though resized on the site to 180px wide) You can just save over the current images/<strong>logo.png</strong> file.</p>
+			
+			<p><strong>Logo Width</strong>:  If you use a logo width other than 180 pixels.  You will need to adjust this in the <strong>style.css</strong> file under section "<strong>02. COLORS AND FONTS</strong>":</p>
+			<br>
+<pre>/*
+=============================================== 02. COLORS AND FONTS ===============================================
+*/
+/* -------------------- A. LOGO WIDTH -------------------- */
+body #logo, body #logo img <strong>{width:180px;}</strong>
+</pre>
+			
+			<p>In addition, you will adjust the the .html files via the width parameter:</p>
+			
+			<pre>&lt;h1 id="logo"&gt;&lt;a href="index.html"&gt;&lt;img src="images/demo/logo.png" alt="logo" <strong>width="180"</strong>&gt;&lt;/a&gt;&lt;/h1&gt;</pre>
+			
+			<br>
+			<p><strong>Logo Height</strong>:  The logo can be any height.</p>
+
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<h5>Adjust the Navigation Height</h5>
+			
+			<p><img src="assets/images/pagetitle1.jpg" width="1025" height="80" ></p>
+			
+			<p>If your logo height is too tall, it may change the position of the main navigation.  You can easily adjust this by editing the <strong>style.css</strong> file.  Section <strong>"02. COLORS AND FONTS"</strong>, sub-section <strong>"A. LOGO WIDTH"</strong></p>
+<pre>/*
+=============================================== 02. COLORS AND FONTS ===============================================
+*/
+/* -------------------- A. LOGO WIDTH -------------------- */
+.sf-menu a {padding: 16px 14px 16px 14px;}
+</pre>
+			<p>Adjust to a larger number for space.</p>
+
+				<br>
+				<br>
+				
+				<p>To adjust the height of the page title, you'll need to edit a similar CSS code:</p>
+				<pre>#page-title h1 {
+padding: 38px 0px;
+}</pre>
+				
+				
+				<br>
+				<h5>Marking a Navigation Item as Selected</h5>
+				<p>The navigation is setup to be easily selectable. For example, the Contact page will show the Contact link in the navigation with a darker font color. Just add a class of "<strong>current-menu-item</strong>" to the navigation list item and it will show as selected. For example:</p>
+
+
+				<pre>
+	&lt;li&gt;
+		&lt;a href="index.html"&gt;Home&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li <strong>class="current-menu-item"&gt;</strong>
+		&lt;a href="about.html"&gt;About us&lt;/a&gt;
+	&lt;/li&gt;	
+	&lt;li&gt;
+		&lt;a href="menu.html"&gt;Menu&lt;/a&gt;
+	&lt;/li&gt;			
+		</pre>
+
+
+		<br>
+
+
+
+
+<br><br>
+			
+	
+	
+			<br><br><br>
+			
+		</section>
+			
+		<section id="html">
+			<h3>HTML Samples</h3>
+			<hr class="notop">
+	
+			
+		
+			
+			
+			<br>
+			<br>
+			<h5>Aligning Images Left, Right, and Center</h5>
+			<p>Any images that are on the website by default will align with the text.  Add a div with a class of "<strong>aligncenter</strong>", "<strong>alignright</strong>", and "<strong>alignleft</strong>" to float any of the images.  For example:</p>
+			
+			<pre>&lt;img class="alignright" src="images/demo/photo.jpg" width="140" height="103" /&gt;</pre>
+			
+			
+			
+			<br>
+			<br>
+			<br>
+			
+			<h5>Creating buttons</h5>
+			<p>The default button is created by just adding one class to a text link. All of the background images and hover effects are added automatically! For Example:</p>
+			
+			
+			<p><img src="assets/images/default-button.jpg" width="170" height="67" ></p>
+			
+			<pre>&lt;a href="http://www.google.com" <strong>class="progression-button"</strong>&gt;Read about us&lt;/a&gt;</pre>
+			
+			
+			
+			<br>
+			<br>
+			<h5>Slider Demo</h5>
+			
+			<p>See <strong>blog.html</strong> page for example of the secondary slider (flexslider) or for the "Revolution Slider", check the index.html page, and the <strong>"Featured Slider"</strong> section of the documentation for further details. </p>
+			
+			
+		
+			<br>
+			<br>
+			<h5>Styling List Items</h5>
+			
+			<p>Lists can be styled by adding a simple class of "<strong>checkmark</strong>", or as just normal <strong>&lt;ul&gt;</strong> <strong>&lt;ol&gt;</strong>.  </p>
+
+							<pre>	&lt;ul <strong>class="checkmark"</strong>&gt;
+		&lt;li&gt;Maecenas malesuada purus&lt;/li&gt;
+		&lt;li&gt;Varius volutpat a a ante&lt;/li&gt;
+		&lt;li&gt;Donec in ante sit amet ligul&lt;/li&gt;
+		&lt;li&gt;Mollis porta sit amet ac est&lt;/li&gt;
+	&lt;/ul&gt;
+							</pre>
+
+
+
+
+			<p><img src="assets/images/list-items.jpg" width="419" height="211" ></p>
+			
+			
+			
+			
+		
+			
+			
+			<br>
+			<br>
+			<h5>Column Layouts</h5>
+			<P>The column layouts are very easy since we are using a grid system. You can use the same column divs on a full width page or a page with a  sidebar. See the Columns pages for an example on how to implement various sizes. </p>
+				
+				<p><strong>Note</strong>: After a set of columns, add &lt;div class="clear"&gt;&lt;/div&gt; to fix any divs from floating into each other on the next row. Also, add the class of <strong>omega</strong> for the last element in a row, and <strong>alpha</strong> for the first one</p>
+			
+<pre>
+	&lt;div class="ls-sc-grid_2 alpha"&gt;
+		&lt;h5&gt;1/2&lt;/h5&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="ls-sc-grid_2 omega"&gt;
+		&lt;h5&gt;1/2&lt;/h5&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="clear"&gt;&lt;/div&gt;
+</pre>
+
+		<p>To check the different types of width you can use in the grid, you can refer to the style.css page:</p>
+		
+<pre>
+.ls-sc-grid_1 {
+  width: 6.333%;
+}
+.ls-sc-grid_2 {
+  width: 14.667%;
+}
+.ls-sc-grid_3 {
+  width: 23.0%;
+}
+.ls-sc-grid_4 {
+  width: 31.333%;
+}
+.ls-sc-grid_5 {
+  width: 39.667%;
+}
+.ls-sc-grid_6 {
+  width: 48.0%;
+}
+.ls-sc-grid_7 {
+  width: 56.333%;
+}
+.ls-sc-grid_8 {
+  width: 64.667%;
+}
+.ls-sc-grid_9 {
+  width: 73.0%;
+}
+.ls-sc-grid_10 {
+  width: 81.333%;
+}
+.ls-sc-grid_11 {
+  width: 89.667%;
+}
+.ls-sc-grid_12 {
+  width: 98.0%;
+}
+</pre>
+
+
+
+<p><img src="assets/images/columns-example.jpg" width="1075" height="353" ></p>
+
+
+
+<br>
+
+			<br>
+			<h5>Toggles, Tabs, Highlights and Dividers</h5>
+			<p>To create different types of Toggles, Tabs, Highlights or Dividers, you could take a look and follow these examples:</p>
+			<p><img src="assets/images/shortcode.jpg" width="890" height="450" ></p>
+
+			<p>Toggles - </p>
+			<pre>					&lt;h4&gt;Toggle&lt;/h4&gt;
+						&lt;div class="ls-sc-toggle "&gt;
+							&lt;h3 class="ls-sc-toggle-trigger"&gt;Toggle Title&lt;/h3&gt;
+							&lt;div class="ls-sc-toggle-container"&gt;Toggle text&lt;/div&gt;
+						&lt;/div&gt;
+			</pre>
+			
+			<p>Tabs - </p>
+			<pre>						&lt;div class="ls-sc-tabs ui-tabs ui-widget ui-widget-content ui-corner-all"&gt;
+							&lt;ul class="ui-tabs-nav ls-sc-clearfix ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist"&gt;
+								&lt;li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="ls-sc-tab-tab-1" aria-labelledby="ui-id-1" aria-selected="true"&gt;
+									&lt;a href="#ls-sc-tab-tab-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1"&gt;Tab #1&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="ls-sc-tab-tab-2" aria-labelledby="ui-id-2" aria-selected="false"&gt;
+									&lt;a href="#ls-sc-tab-tab-2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2"&gt;Tab #2&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+							&lt;div id="ls-sc-tab-tab-1" class="tab-content  ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false"&gt;Tab 1 text&lt;/div&gt;
+							&lt;div id="ls-sc-tab-tab-2" class="tab-content  ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-2" role="tabpanel" aria-expanded="false" aria-hidden="true"&gt;Tab 2 text&lt;/div&gt;
+						&lt;/div&gt;
+			</pre>
+			
+			<p>Highlights - </p>
+			<pre>&lt;p&gt;Lorem ipsum dolor sit amet, &lt;span class="ls-sc-highlight green "&gt;consectetur adipiscing elit&lt;/span&gt;. Cras rhoncus, diam quis luctus pellentesque, odio est condimentum leo, nec accumsan orci augue commodo enim. &lt;span class="ls-sc-highlight red "&gt;Proin cursus sollicitudin magna eget ultricies&lt;/span&gt;.&lt;/p&gt;</pre>
+			
+			
+			<p>Dividers - </p>
+			<pre>&lt;hr class="ls-sc-divider dashed yellow " &gt;
+
+&lt;hr class="ls-sc-divider double green " &gt;
+
+&lt;hr class="ls-sc-divider solid blue"&gt;</pre>
+			
+
+		</section>
+		
+		
+		
+		
+		
+		<section id="cssfiles">
+			<h3>CSS Files (Color Scheme)</h3>
+			<hr class="notop">
+			
+			<h5>General CSS Information</h5>
+			<p>We are using two types of css files. </p>
+			<ol>
+				<li><strong>style.css</strong>  (Default Styles)</li>
+				<li>/css/<strong>responsive.css</strong>  (Responsive Styling)</li>
+			</ol>			
+			
+			
+			<br><br>
+			
+			<h5>Adjusting Color Schemes and Fonts</h5>
+			<p>All of the color scheme adjustments are edited in the <strong>style.css</strong> file.</p>
+
+			
+<pre>
+/*
+=============================================== 02. COLORS AND FONTS ===============================================
+*/
+</pre>	
+
+	<p>Each of the color adjustment sections are labelled and easy to edit via the 6 digit hex color code:</p>
+
+
+<pre>
+	/* -------------------- B. BACKGROUND COLORS -------------------- */
+</pre>
+
+			
+			
+			<br><br>
+
+			<h5>Example of changing the Navigation Background Color</h5>
+			<p>Adjusting the navigation background color is easy: Start by opening up the <strong>style.css</strong> file.</p>
+			
+			<p>Next find the corresponding section titled "<strong>B. BACKGROUND COLORS</strong>"</p>
+			
+			<pre>header {<strong>background-color:#ffffff;</strong>}</pre>
+			
+			<p><img src="assets/images/heading-red.jpg" width="978" height="95" ></p>
+			
+			<p>Edit the 6 digit color code to what you want.  Note:  If you have trouble finding color codes, use this website <a href="http://www.colorpicker.com" target="_blank">http://www.colorpicker.com</a>.</p>
+			
+			<pre>/* -------------------- B. BACKGROUND COLORS -------------------- */
+header {<strong>background-color:#d10000;</strong>}</pre>
+			
+						
+			
+			
+			
+			
+	
+			<br><br>
+			<h5>Changing the template's fonts</h5>
+			<p>All of the font-families are designed in the <strong>style.css</strong> file under the section "<strong>02. COLORS AND FONTS</strong>".</p>
+			
+			<p>It is near the top of the stylesheet here:</p>
+<pre>
+	/* -------------------- D. FONT FAMILIES -------------------- */
+body, body #main form.woocommerce-ordering select {
+	font-family: 'Raleway', sans-serif;
+}
+</pre>			
+			
+			
+			
+	<br><br>
+	<h5>Additional Styling Options</h5>
+	<p>You can find additional color scheme options in the main stylesheet <strong>style.css</strong>.  Just look in the table of contents at the top to find the correct styling:</p>
+	
+<pre>
+/*  Table of Contents
+01. HTML5 ✰ BOILERPLATE RESET FILE
+02. COLORS AND FONTS
+	A. LOGO WIDTH 
+	B. BACKGROUND COLORS
+	C. FONT COLORS
+	D. FONT FAMILIES
+03. PRIMARY STYLES
+	A. DEFAULT STYLES
+	B. CSS3 TRANSITIONS
+04. MAIN CONTAINERS
+05. HOMEPAGE STYLES
+06. FOOTER STYLES
+07. BLOG STYLES
+08. SIDEBAR & WIDGET STYLES
+09. PORTFOLIO STYLES
+10. DEFAULT GRID
+11. BUTTON STYLES
+12. CONTACT FORM STYLES
+13. REVOLUTION SLIDER
+14. SLIDER and PAGE TITLE
+15. NAVIGATION
+16. WOOCOMMERCE STYLES
+17. FONT AWESOME
+18. LIGHTBOX STYLES
+*/</pre>
+
+			
+	<br><br>
+		
+		
+		<p></p>
+
+			
+
+		</section>
+		
+		
+		
+		
+		
+		
+		
+		<section id="javascriptfiles">
+			<h3>JavaScript Files</h3>
+			<hr class="notop">
+			
+			<p>This template imports five main types of Javascript files.</p>
+			
+			<ul>
+				<li><a href="http://www.modernizr.com/" target="_blank">Modernizr - modernizr-2.6.2.min.js</a></li>
+				<li><a href="http://www.jquery.com/" target="_blank">jQuery</a></li>
+				<li>plugins.js containing all javascript plugins (Slider, Lightbox, and etc.)</li>
+				<li>scripts.js containing all javascript scripts (Hover Effects, Menu Drop Down, and etc.)</li>
+			</ul>
+			
+			
+		
+			
+			<br><br><Br>
+			<h5>Adjusting Transprency on Images</h5>
+			<p>The transparency is adjusted via a javascript plugin called Transify.   You can adjust the opacity as needed or remove the transparency.</p>
+			<p>You can do this in the <strong>/js/script.js </strong>file at the bottom:</p>
+			
+			<pre>/*
+=============================================== 06. TRANPARENT SLIDER BUTTON + PORTFOLIO  ===============================================
+*/
+jQuery(document).ready(function($) {
+	 'use strict';
+	$('.portfolio-index-padding').transify({opacityOrig:0.8, percentWidth:'100%'});
+});</pre>
+
+<p>Learn how to use this plugin more here: <a href="http://jorenrapini.com/blog/css/transify-a-jquery-plugin-to-easily-apply-transparency-opacity-to-an-elements-background" target="_blank">http://jorenrapini.com/blog/css/transify-a-jquery-plugin-to-easily-apply-transparency-opacity-to-an-elements-background</a></p>
+			
+			
+			<br><br><br>
+		</section>
+		
+		
+		
+		
+		
+		<section id="featuredslider">
+			<h3>Featured Sliders</h3>
+			<hr class="notop">
+			<p>We use two kinds of responsive sliders, one for the homepage, and one for general posts or pages. 
+			The premium 'Revolution Slider' plugin is used for the Homepage templates: <a href="http://themepunch.com/revolution/" target="_blank">http://themepunch.com/revolution/</a>.</p>
+			
+			<p>The secondary slider used throughout this template is <a href="http://flexslider.woothemes.com" target="_blank">Flex Slider</a>.  </p>
+			
+			
+			<h5>Using the Revolution Slider (Homepage Slider)</h5>
+			<p>The Revolution Slider is fairly easy to use.  You can add slides by adding simple list items, and add as many captions as you want.  Also, you can surround the image with a link and easily add a link.  Here is a (partial) example of the homepage slider code. </p>
+			
+			<pre>	&lt;div id="pro-home-slider"&gt;&lt;!-- START REVOLUTION SLIDER --&gt;
+	&lt;div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"&gt;
+		&lt;div id="rev_slider_1_1" class="rev_slider fullwidthabanner"&gt;</pre>
+		
+		<p>The above section is the main wrapper of the homepage slider.
+		
+		Bellow is an example of adding the first slide into the slider. The image is located in the img tag, while the captions are layered in three layers, which are loaded separately:
+		</p>
+		
+		
+		<pre>
+		&lt;ul&gt;	
+			&lt;!-- SLIDE  --&gt;
+			&lt;li data-transition="zoomin" data-slotamount="7" data-masterspeed="300" data-thumb="images/demo/new-slide-1.jpg"  data-saveperformance="off"  data-title="Slide 1"&gt;
+				&lt;!-- MAIN IMAGE --&gt;
+				&lt;img src="rs-plugin/images/dummy.png"  alt="sample-image47" data-lazyload="images/demo/new-slide-1.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"&gt;
+			
+			&lt;!-- LAYERS --&gt;
+
+			&lt;!-- LAYER NR. 1 --&gt;
+			&lt;div class="tp-caption pro-heading-blue customin fadeout tp-resizeme"
+				data-x="800"
+				data-y="center" data-voffset="-115"
+				data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+				data-speed="300"
+				data-start="250"
+				data-easing="Power4.easeInOut"
+				data-splitin="none"
+				data-splitout="none"
+				data-elementdelay="0.1"
+				data-endelementdelay="0.1"
+				data-endspeed="200"
+				&gt;
+			WELCOME TO FROVER
+			&lt;/div&gt;
+
+			&lt;!-- LAYER NR. 2 --&gt;
+			&lt;div class="tp-caption pro-text-blue tp-fade tp-resizeme"
+				data-x="130"
+				data-y="bottom" data-voffset="-177"
+				data-speed="300"
+				data-start="1200"
+				data-easing="Power1.easeIn"
+				data-splitin="none"
+				data-splitout="none"
+				data-elementdelay="0.1"
+				data-endelementdelay="0.1"
+				data-endspeed="300"
+				&gt;It is curious to recall some of the mental habits of those departed days. At most terrestrial men fancied there might be other men upon Mars, perhaps inferior to themselves and ready to welcome.
+			&lt;/div&gt;
+
+			&lt;!-- LAYER NR. 3 --&gt;
+			&lt;div class="tp-caption pro-blank small_light_white  tp-fade tp-resizeme"
+				data-x="130"
+				data-y="bottom" data-voffset="-70"
+				data-speed="300"
+				data-start="1200"
+				data-easing="Power1.easeIn"
+				data-splitin="none"
+				data-splitout="none"
+				data-elementdelay="0.1"
+				data-endelementdelay="0.1"
+				data-endspeed="300"
+				&gt;
+				
+				</pre>
+				
+				<p>Bellow is an example of the two different button styles we used in the Live Preview of the template:</p>
+				<pre>
+				&lt;a href="#" class="ls-sc-button blue" target="_self" title="" rel=""&gt;&lt;span class="ls-sc-button-inner"&gt;Get to know us&lt;/span&gt;&lt;/a&gt;
+				</pre>
+				
+				<p>Then you'll need to close the containers and list items, and start the script which actually loads the slide:</p>
+				
+				<pre>
+				
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;!-- SLIDE  --&gt;
+		&lt;/ul&gt;
+	&lt;div class="tp-bannertimer tp-bottom"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+				&lt;script type="text/javascript"&gt;
+
+	jQuery(document).ready(function() {
+						   jQuery('#rev_slider_1_1').revolution(
+							{
+							dottedOverlay:"none",
+							delay:7500,
+							startwidth:1600,
+							startheight:725,
+							hideThumbs:200,
+
+							thumbWidth:100,
+							thumbHeight:50,
+							thumbAmount:3,
+
+							navigationType:"none",
+							navigationArrows:"solo",
+							navigationStyle:"preview3",
+
+							touchenabled:"on",
+							onHoverStop:"on",
+
+							swipe_velocity: 0.7,
+							swipe_min_touches: 1,
+							swipe_max_touches: 1,
+							drag_block_vertical: false,
+							
+							
+							keyboardNavigation:"on",
+
+							navigationHAlign:"center",
+							navigationVAlign:"bottom",
+							navigationHOffset:0,
+							navigationVOffset:20,
+
+							soloArrowLeftHalign:"left",
+							soloArrowLeftValign:"center",
+							soloArrowLeftHOffset:0,
+							soloArrowLeftVOffset:0,
+
+							soloArrowRightHalign:"right",
+							soloArrowRightValign:"center",
+							soloArrowRightHOffset:0,
+							soloArrowRightVOffset:0,
+
+							shadow:0,
+							fullWidth:"on",
+							fullScreen:"off",
+
+							spinner:"spinner3",
+
+							stopLoop:"off",
+							stopAfterLoops:-1,
+							stopAtSlide:-1,
+
+							shuffle:"off",
+
+							autoHeight:"off",
+							forceFullWidth:"on",
+							
+							
+							hideTimerBar:"on",
+							hideThumbsOnMobile:"off",
+							hideNavDelayOnMobile:1500,
+							hideBulletsOnMobile:"on",
+							hideArrowsOnMobile:"on",
+							hideThumbsUnderResolution:0,
+							hideSliderAtLimit:0,
+							hideCaptionAtLimit:0,
+							hideAllCaptionAtLilmit:0,
+							startWithSlide:0					
+							});
+
+						
+					});
+
+				&lt;/script&gt;
+	&lt;/div&gt;
+
+</pre>
+			<br>
+			<br>
+			
+			<p><strong>Note :</strong> The Revolution Slider's full documentation and files are also available in the 'Additional Files' folder. Please refer to it if you need further assistance.</p>
+			
+			
+			<br>
+			<br>
+			
+			
+			
+			<h5>Secondary Slider (Flex Slider)</h5>
+			
+			<p>Using the flexslider is super easy.  You can easily add new slides by adding simple list items.  Also, you can surround the image with a link and easily add a link.  Here is an example of the homepage slider code. </p>
+			
+			<ul>
+				<li>List items create new slides</li>
+				<li>Optional Caption can be added.</li>
+			</ul>
+<pre>
+	&lt;div class="flexslider gallery-progression" &gt;
+		&lt;ul class="slides"&gt;
+		&lt;li&gt;
+			&lt;div class="caption-progression"&gt;
+				&lt;div class="width-container"&gt;
+					Unique &amp; modern restaurant&lt;br&gt;in the heart of your town.
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- close .caption-progression --&gt;
+			&lt;img src="images/demo/slide1.jpg" alt="slide"&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;img src="images/demo/slide2.jpg" alt="slide"&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;div class="caption-progression "&gt;
+				&lt;div class="width-container"&gt;
+					Create custom text captions&lt;br&gt;that can be customized.
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- close .caption-progression --&gt;
+			&lt;img src="images/demo/slide3.jpg" alt="slide"&gt;
+		&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;&lt;!-- close .flexslider --&gt;
+</pre>		
+
+<p>All of the options for this are located underneath the slider in the javascript (See the <a href="http://flexslider.woothemes.com" target="_blank">Slider's website</a> for details on all the options).</p>
+<pre>
+	&lt;script type="text/javascript"&gt;
+	jQuery(document).ready(function($) {
+	    $('#blog-slider').flexslider({
+			animation: "fade",              //String: Select your animation type, "fade" or "slide"
+			slideshow: false,                //Boolean: Animate slider automatically
+			slideshowSpeed: 8500,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+			animationDuration: 250,         //Integer: Set the speed of animations, in milliseconds
+			directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
+			controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+			keyboardNav: true,              //Boolean: Allow slider navigating via keyboard left/right keys
+			mousewheel: false,              //Boolean: Allow slider navigating via mousewheel
+			prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+			nextText: "Next",               //String: Set the text for the "next" directionNav item
+			pausePlay: false,               //Boolean: Create pause/play dynamic element
+			pauseText: 'Pause',             //String: Set the text for the "pause" pausePlay item
+			playText: 'Play',               //String: Set the text for the "play" pausePlay item
+			randomize: false,               //Boolean: Randomize slide order
+			slideToStart: 0,                //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+			useCSS: true,
+			animationLoop: true,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+			pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+			pauseOnHover: false            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+	    });
+	});
+	&lt;/script&gt;
+</pre>
+
+	
+			
+			<br><br>
+			<h5>Example of adjusting the slider animation </h5>
+			 
+			<p>You can adjust autoplay, disable next/previous arrows, slide durations and etc in the javascript below the slider.  For example if we wanted to change the slider animation from "slide" to "fade", adjust the javascript like so:</p>
+		
+<pre>
+	 $('.flexslider').flexslider({
+			<strong>animation: "fade",</strong>              //String: Select your animation type, "fade" or "slide"
+</pre>			
+			
+			
+			<br><br>
+			
+			<h5>Adjusting height of any slider</h5>
+			<p>To adjust the height of the any of the sliders, just add taller images.  The slider will automatically resize it's height based on the new image height.</p>
+			
+			
+			<br><br><br>
+
+
+<p></p>
+
+
+<br>
+<br>
+		</section>
+		
+		<section id="page-title">
+			<h3>Custom Backgrounds</h3>
+			<hr class="notop">
+				
+				
+				
+			<p>You can easily adjust the custom background images across the template. (As seen behind the tablet in the index page) This is powered by the BackStretch Plugin: <a href="http://srobbin.com/jquery-plugins/backstretch/" target="_blank">http://srobbin.com/jquery-plugins/backstretch/</a></p>
+			<p><img src="assets/images/page-title-bg-red.jpg" width="750" height="391" ></p>
+				
+				
+				
+				<p>To create the page title background, you just need the JavaScript on your page:</p>
+				
+<pre>
+	&lt;script type="text/javascript"&gt;
+	    jQuery(document).ready(function($){$(".pyre_homepage_main_higlight-feat-4").backstretch(["images/demo/bg-light-feature.jpg"],{fade:750,});});
+	&lt;/script&gt;
+</pre>
+		
+		<br>
+		<p>You can easily adjust the image inside the JavaScript:</p>		
+				<pre>"images/demo/bg-light-feature.jpg"</pre>
+				
+				<br><br>
+			
+			
+			
+		</section>
+		
+		
+		
+		
+
+		<section id="lightbox">
+			<h3>Using the Lightbox</h3>
+			<hr class="notop">
+			
+			
+			<p>The lightbox we are using is called "<strong>prettyPhoto</strong>". You can find out more about the <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">prettyPhoto lightbox here</a>. All of the Javascript for the lightbox is located in the "<strong>script.js</strong>" file in the <strong>/js</strong> folder.</p>
+			
+			
+			
+			<br><br>
+			<h5>Image Lightbox</h5>
+			<p>Activating an image is simple as adding a <strong>rel="prettyPhoto"</strong> like so:</p>
+<pre style="overflow:auto;">
+&lt;a href="images/demo/portfolio-full-size1.jpg" <strong>rel="prettyPhoto"</strong> &gt;
+	&lt;img src="images/demo/lightbox-thumb.jpg" width="150" height="150" alt="slideshow" /&gt;
+&lt;/a&gt;	
+</pre>				
+
+			<p><strong>Note</strong>: The caption is in the title="" tag and you can remove that if you don't want it of course.</p>	
+			
+			
+			<p><img src="assets/images/lightbox-image.jpg" width="400" height="306" ></p>
+			
+			
+			
+			<br><br>
+			<h5>Video Lightbox</h5>
+			<p>Adding a video is exactly the same with the rel="prettyPhoto" tag.  <strong>You don't need any embed code, just link directly to the vimeo or youtube page.</strong></p>
+<pre>
+&lt;a href="<strong>http://vimeo.com/22884674</strong>" <strong>rel="prettyPhoto"</strong> "&gt;
+	&lt;img src="images/demo/lightbox-video.jpg" width="150" height="150" alt="slideshow" /&gt;
+&lt;/a&gt;
+</pre>			
+
+
+			<p><img src="assets/images/lightbox-video.jpg" width="400" height="297" ></p>
+			
+			
+			
+			
+			<br><br>
+			<h5>Creating a lightbox gallery (Next/Previous buttons)</h5>
+			<p>Grouping images into a lightbox gallery is simple as well.  The only additional step involves naming your gallery like so: <strong>[pp_gal]</strong>.   Then place that code in tags like <strong>rel="prettyPhoto[pp_gal]"</strong>:</p>
+			
+			
+<pre style="overflow:auto;">
+&lt;a href="images/demo/portfolio-full-size1.jpg" <strong>rel="prettyPhoto[pp_gal]" </strong> title="You can add caption to pictures."&gt;
+	&lt;img src="images/demo/lightbox-thumb.jpg" width="150" height="150" alt="slideshow" /&gt;
+&lt;/a&gt;	
+</pre>			
+
+<br><br>
+
+<p></p>
+			
+			
+			
+		</section>
+		
+		
+		
+		
+		
+		<section id="extras">
+			<h3>Contact Map / Flickr</h3>
+			<hr class="notop">
+			
+<br><br>
+			
+					
+					
+					
+					<br><br><br>
+					
+					
+					<h5>Embedding a map (contact pages)</h5>
+	
+								<p>It's simple to add an embedded map. First, you'll need to go to <a href="http://maps.google.com">Google Maps</a> and search for your desired location. Next, you'll need to copy the embed code, found by clicking the gear/wheel on the bottom of the page, and then click on <strong>'Share and embed map'</strong>. The last part would require to just go to the contact.html file and add the code inside the map-progression div:</p>
+
+								
+
+<pre>
+	&lt;div id="map-progression"&gt;
+		&lt;iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3021.436848951956!2d-73.9656126!3d40.774409299999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a29d3847f5%3A0x564dfbba0141774a!2s5th+Ave%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbe!4v1411556637165" frameborder="0"&gt;&lt;/iframe&gt;
+	&lt;/div&gt;
+</pre>
+						
+						<p>Note:  You can adjust the height of the map by editing the style.css file and the #map-progression dimensions.</p>		
+
+
+								<p><img src="assets/images/map.jpg" width="753" height="421"></p>
+				
+				
+				
+				<p></p>
+				
+				<br><br>
+				
+				<h5>Setting Up the Flickr Widget</h5>
+				<br><br>
+				
+				<p></p>
+				<p>In order to add your Flickr account in the footer, you'll need to edit your script.js file which is located in the /js/ folder. You should be able to see this line in there: <pre>$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=52617155@N08&lang=en-us&format=json&jsoncallback=?", displayImages);  //YOUR IDGETTR GOES HERE</pre></p>
+				
+				<p>The only part you'll have to change is this ID: <strong>52617155@N08</strong></p>
+				
+				
+
+		</section>
+		
+		
+		
+		<section id="phpfiles">
+			<h3>Contact Form</h3>
+			<hr class="notop">
+
+			<p>You can easily edit the default contact form from the live preview.  There is an auto form validation plugin already activated, so all you need to worry about is to set the action of the form to send you an email once submitted. If you need a more complicated form, you can do this by using the free third party applicaiton WuuFoo.com.  You can register free and create more advanced forms.  You can then grab the "javascript embed" code and drop it onto the contact.html instead of our example.</p>	
+
+			
+			<br><br><Br><br>
+
+		</section>
+		
+		
+		
+		
+		
+		<section id="customizations">
+			<h3>Customizations</h3>
+			<hr class="notop">
+			
+			
+			<p> We do not offer support for customizations.  However here are some tips on make some basic changes.</p>
+			
+			<p><strong>Note</strong>: We are available for hire via our website.  Just <a href="http://progressionstudios.com/contact/" target="_blank">fill out our contact form</a> with your project details.</p>
+			
+			
+			<br>
+			<h5>Responsive layout</h5>
+			<p>This site is beautiful at any size, be it a 17" laptop screen or an iPhone.  All of the styles for the responsive layout are located here: <strong>/css/responsive.css</strong></p>
+			<p>The responsive grid is controlled via "Media Queries".  Magnolia uses media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. Magnolia's media queries are almost exclusively targeted at max and min widths rather than device sizes or orientations. The advantage of this is browsers and future mobile devices that don't map to exact set dimensions will still benefit from the styles. That being said, all of the queries were written to be optimal on Apple iOS devices. The built in media queries include:</p>
+
+			<ul class="square">
+										<li><strong>Smaller than 960</strong>: Smaller than the standard base grid</li>
+										<li><strong>Tablet Portrait</strong>: Between 768px and 959px</li>
+										<li><strong>All Mobile Sizes</strong>: Less than 767px</li>
+										<li><strong>Just Mobile Landscape</strong>: Between 480px and 767px</li>
+										<li><strong>Just Mobile Portrait</strong>: Less than 479px</li>
+
+					<p>Example:</p>				</ul>
+			<pre>
+/* #Media Queries
+================================================== */
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {}
+
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {}
+
+  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {}
+			</pre>
+
+
+			<br>
+
+
+				<br>
+
+		
+
+				<br>
+
+
+			<h5>How to disable the Responsive Ability</h5>
+			<p>You can easily remove the responsive styling by removing the /css/responsive.css file.</p>
+			
+			<p>If you remove this, you will need to add one line of CSS to your style.css file:</p>
+			<pre>body {min-width:1250px;}</pre>
+		
+			
+
+			
+			
+			<br>
+			<h5>CSS Styling</h5>
+			<p>We only have one CSS stylesheet and it is located in the main theme folder under <strong>style.css</strong> file.  You can also find the responsive stylesheet in the /css/ folder..</p>
+			
+		</section>
+		
+		
+		<section id="searchcms">
+			<h3>Search</h3>
+			<hr class="notop">
+			
+			<p>Site Templates do not come with the ability to search.  We have included the search bar for if users would like to add a content management system or search engine script. </p>
+			
+			<p>Search engine options:</p>
+			<ul>
+				<li>Use a content management sytem</li>
+				<li><a href="http://codecanyon.net/search?category=php-scripts&term=search&type=files" target="_blank">Purchase a simple search engine script</a></li>
+				<li><a href="http://www.google.com/sitesearch/" target="_blank">Google custom search</a></li>
+			</ul>
+		
+			
+			
+			
+			<br><br>
+			<h5>Content Management</h5>
+			
+			<p>This site template is built to be used without a content management system.  If you would like to convert the files to a content management system, we recommend:</p>
+			
+			<ul>
+				<li><a href="http://wordpress.org/" target="_blank">WordPress</a></li>
+				<li><a href="http://www.tumblr.com/developers" target="_blank">Tumblr</a></li>
+				<li><a href="http://net.tutsplus.com/articles/web-roundups/top-10-most-usable-content-management-systems/" target="_blank">Article on top 10 cms's</a></li>
+			</ul>
+			
+			<p>We also have a WordPress version of this template here:<br />
+			<a href="http://themeforest.net/item/frover-mutipurpose-wordpress-theme/8486009">http://themeforest.net/item/frover-mutipurpose-wordpress-theme/8486009</a></p>
+			
+			
+
+		</section>
+		
+		
+		<section id="psd_files">
+			<h3>PSD Files</h3>
+			<hr class="notop">
+			<p>I've included all of my design psds with this template:</p>
+
+				<ol>
+					<li>The original layered PSD Files</li>
+					<li>Templates for site</li>
+				</ol>
+
+			<p>If you'd like to change the logo in the header, open "logo.psd", make the necessary adjustments.</p>
+
+		</section>
+		
+		
+		<section id="sources_and_credits">
+			<h3>Sources and Credits</h3>
+			<hr class="notop">
+			<p>I've used the following images, icons or other files as listed.</p>
+			<ul>
+				<li><a href="http://fontawesome.io/" target="_blank">Social Icons</a></li>
+				<li><a href="http://themepunch.com/revolution/jquery" target="_blank">Revolution Slider</a></li>
+				<li><a href="http://flex.madebymufffin.com/" target="_blank">Flex slider</a></li>
+				<li><a href="https://github.com/mambows/mobilemenu" target="_blank">Mobile Menu jQuery plugin</a></li>
+				<li><a href="http://www.google.com/webfonts" target="_blank">Google Fonts</a></li>
+				<li><a href="http://users.tpg.com.au/j_birch/plugins/superfish/" target="_blank">Drop-Down Script</a></li>
+				<li><a href="http://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a></li>
+				<li><a href="http://getskeleton.com/" target="_blank">Skeleton Responsive Framework</a></li>
+				<li><a href="http://jqueryvalidation.org/" target="_blank">jQuery Contact Form</a></li>
+				<li><a href="http://fitvidsjs.com/" target="_blank">Responsive Embedded Videos JavaScript</a></li>
+			</ul>
+			<hr class="notop">
+			<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. Feel free to rate my template as 5 out of 5 stars. If it's not a 5 of out 5, e-mail me and let me know what I can do to improve your experience.</p>
+			<p><strong>Michael Garcia</strong>, <a href="mailto:mike@progressionstudios.com">mike@progressionstudios.com</a></p>
+			<p><a href="http://support.progressionstudios.com/" target="_blank">Support Forum</a></p>
+		</section>
+	</div><!-- close #documenter_content -->
+</body>
+</html>
